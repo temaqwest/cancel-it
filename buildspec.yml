@@ -6,16 +6,16 @@ phases:
     - echo Installing Node 12 & npm...
     - curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
     - apt install -y nodejs
-    pre_build:
-      commands:
-        - echo Installing dependencies via npm install...
-        - npm install
-    build:
-      commands:
-        - echo Building...again and again
-        - gulp
-    artifacts:
-      files:
-        - "**/*"
-      discard-paths: no
-      base-directory: dist
+  pre_build:
+    commands:
+      - echo Installing dependencies via npm install...
+      - npm install
+  build:
+    commands:
+      - echo Building...again and again
+      - gulp
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist

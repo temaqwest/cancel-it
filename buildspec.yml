@@ -12,7 +12,7 @@ phases:
         - npm install
     build:
       commands:
-        - echo Building...
+        - echo Building...again and again
         - gulp
     artifacts:
       files:

@@ -1,0 +1,14 @@
+.header {
+  padding: 0 75px;
+  height: 87px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: $tablet - 1) {
+  .header {
+    background-color: $color-black;
+    height: 65px;
+    padding: 0;
+  }
+}

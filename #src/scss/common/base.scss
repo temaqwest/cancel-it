@@ -1,0 +1,18 @@
+.container {
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1720px;
+  padding-right: 110px;
+  padding-left: 110px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: $desktop-sm - 1) {
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}

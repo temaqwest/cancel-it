@@ -108,4 +108,6 @@ const watchFiles = () => {
 
 const allStart = gulp.series(pugTask, scssTask, jsTask, fontsTask, imgTask)
 
+gulp.task('build', gulp.parallel(allStart));
+
 exports.default = gulp.parallel(allStart, watchFiles, webServer);

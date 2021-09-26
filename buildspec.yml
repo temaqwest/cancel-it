@@ -10,9 +10,9 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
-    build:
-      commands:
-        - gulp build
+  build:
+    commands:
+      - gulp build
 artifacts:
   files:
     - "**/*"

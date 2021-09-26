@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - npm install gulp -g
       - npm install
   build:
     commands:
